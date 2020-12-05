@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!DOCTYPE html>
+
   <head>
     <meta charset="UTF-8">
     <title>Catálogo Auto</title>
@@ -24,21 +25,47 @@
               <!-- FORM TO ADD TASKS -->
               <form id="formTask">
                 <div class="form-group">
-                  <input type="text" id="Fecha_Ingreso" placeholder="Add Fecha de Ingreso" class="form-control">
-                  <input type="text" id="Marca" placeholder="Add Marca del Auto" class="form-control">
-                  <input type="text" id="Modelo" placeholder="Add Modelo del Auto" class="form-control">
-                  <input type="text" id="Color" placeholder="Add Color del Auto" class="form-control">
-                  <input type="text" id="AñoA" placeholder="Add Año del Auto" class="form-control">
-                  <input type="text" id="Kilometraje" placeholder="Add Kilometraje Auto" class="form-control">
-                  <input type="text" id="Version" placeholder="Add Versión del Auto" class="form-control">
+                  <label type="text">Ingrese la Fecha de Ingreso</label>
+                  <input type="date" id="Fecha_Ingreso" class="form-control">
+                  <label type="text">Ingrese Marca del Auto</label>
+                  <select name="select" id="Marca" class="form-control">
+                      <option value="Marca1">NISSAN</option>
+                      <option value="Marca2">KIA</option>
+                      <option value="Marca3">JAC</option>
+                      <option value="Marca4">CHEVROLET</option>
+                      <option value="Marca5">BMW</option>
+                      <option value="Marca6">FERRARI</option>
+                      <option value="Marca7">VOLVO</option>
+                      <option value="Marca8">JEEP</option>
+                  </select>
+                  <label type="text">Ingrese Modelo del Auto</label>
+                  <input type="text" id="Modelo" placeholder="Add Modelo" class="form-control">
+                  <label type="text">Ingrese Color del Auto</label>
+                  <input type="text" id="Color" placeholder="Add Color" class="form-control">
+                  <label type="text">Ingrese Año del Auto</label>
+                  <select name="select" id="AñoA" class="form-control">
+                      <option value="Anio1">2010</option>
+                      <option value="Anio2">2011</option>
+                      <option value="Anio3">2012</option>
+                      <option value="Anio4">2013</option>
+                      <option value="Anio5">2014</option>
+                      <option value="Anio6">2015</option>
+                      <option value="Anio7">2016</option>
+                      <option value="Anio8">2017</option>
+                      <option value="Anio9">2018</option>
+                      <option value="Anio10">2019</option>
+                      <option value="Anio11">2020</option>
+                      <option value="Anio12">2021</option>
+                  </select>
+                  <label type="text">Ingrese Kilometraje del Auto</label>
+                  <input type="text" id="Kilometraje" placeholder="Add Kilometraje KM" class="form-control">
+                  <label type="text">Ingrese Detalles de Versión del Auto</label>
+                  <input type="description" id="Version" placeholder="Add Descripción" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Consultar</button>
                 <button type="submit" class="btn btn-primary btn-block">Agregar Auto</button>
                 <button type="submit" class="btn btn-primary btn-block">Eliminar Auto</button>
                 <button type="submit" class="btn btn-primary btn-block">Actualizar datos</button>
-              </form>
-            </div>
-          </div>
         </div>
 
         <div class="col-md-8">
