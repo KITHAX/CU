@@ -1,18 +1,23 @@
 document.getElementById('formTask').addEventListener('submit', GuardarTask);
 
 function GuardarTask(e) {
-  let Fech = document.getElementById('Fecha_Ingreso').value;
-  let Marc = document.getElementById('Marca').value;
-  let Model = document.getElementById('Modelo').value;
-  let Col = document.getElementById('Color').value;
-  let Anio = document.getElementById('AñoA').value;
-  let Kilom = document.getElementById('Kilometraje').value;
-  let Vers = document.getElementById('Version').value;
+  let date = document.getElementById('Fecha_Ingreso').value;
+  let select = document.getElementById('Marca').value;
+  let title = document.getElementById('Modelo').value;
+  let title = document.getElementById('Color').value;
+  let select = document.getElementById('AñoA').value;
+  let title = document.getElementById('Kilometraje').value;
+  let description = document.getElementById('Version').value;
   console.log(description)
 
   let task = {
-    title,
-    description
+    date: Fecha_Ingreso,
+    select: Marca,
+    title: Modelo,
+    title: Color,
+    select: AñoA,
+    title: Kilometraje,
+    description: Version,
   };
 
   if(localStorage.getItem('tasks') === null) {
